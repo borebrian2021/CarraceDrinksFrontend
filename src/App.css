@@ -159,7 +159,7 @@ color:#68161c;
   background-color:transparent;
   padding: 6px;
   color:white;
-  transition:all ease 0.3s;
+  transition:padding ease 0.3s;
 }
 .getStarted:hover{
   border:1px white solid;
@@ -193,10 +193,13 @@ color:#68161c;
   /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
 }
 .labelTitle{
-  height:40px;
-  color:#f38600;
-  width: 200px;
+
+  width:auto;
+  padding:15px;
+  box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.5) -3px -3px 6px 1px inset;
   background-color:#68161c;
+  /* background-image: linear-gradient(to right, #3e3233 , #68161c); */
+  color:#f38600;
 }
 .center_first{
   justify-content:center;
@@ -277,4 +280,13 @@ color:#68161c;
   padding:6px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   /* border:1px #270207 solid; */
+}
+.bottleMeter{
+  display: flex;
+width:100%;
+}
+.meterParent{
+  height: 200px;
+  width:40px;
+  background-color:red;
 }

@@ -82,15 +82,22 @@ color:#68161c;
   .logoText{
     color:white
   }
+  .avatar{
+    height:40px;
+    width:40px;
+    object-fit: cover;
+    border-radius:50px;
+  }
   .search{
     /* border:1px solid #68161c; */
     padding:15px;
     border:none;
     height:35px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 5px;
+    border-radius: 50px;
     transition:all ease 0.3s;
     outline:none;
+    
     margin-right:15px;
   }
   .search:hover{
@@ -178,6 +185,7 @@ color:#68161c;
   position:fixed;
   background-color: #68161c;
   top:40;
+  margin-top: 52px;
   padding:10px;
   padding-top:60px;
   align-items: center;
@@ -198,4 +206,12 @@ color:#68161c;
 .bg_dark{
   background-color:rgb(0, 0, 0, 0.6);
   height:100%;
+}
+.itemList{
+  display:grid;
+  grid-template-columns: 30% 70%;
+  
+}
+.itemParent{
+  margin-top:30px;
 }

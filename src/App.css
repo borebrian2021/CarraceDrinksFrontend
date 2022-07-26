@@ -83,10 +83,18 @@ color:#68161c;
     color:white
   }
   .avatar{
-    height:40px;
-    width:40px;
+    height:50px;
+    width:50px;
     object-fit: cover;
-    border-radius:50px;
+    border-radius:5px;
+    transition:all ease 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .avatar:hover{
+    height:60px;
+    width:60px;
+    object-fit: cover;
+    /* border-radius:50px; */
   }
   .search{
     /* border:1px solid #68161c; */
@@ -94,7 +102,7 @@ color:#68161c;
     border:none;
     height:35px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 50px;
+    border-radius: 5px;
     transition:all ease 0.3s;
     outline:none;
     
@@ -166,6 +174,23 @@ color:#68161c;
   /* background-color: red; */
   /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
 }
+.ddrinksDetails{
+  height:800px !important;
+  padding-left:300px;
+  /* border-top-left-radius: 50px; */
+  /* margin-top: 60px; */
+  background-image: url('./images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-size:cover;
+  /* background-color: red; */
+  /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+}
+.labelTitle{
+  height:40px;
+  color:#f38600;
+  background:#68161c;
+}
 .center_first{
   justify-content:center;
   align-items:center;
@@ -178,14 +203,28 @@ color:#68161c;
   height:300px;
 
 }
-
+.nameSide{
+  justify-content: right;
+  align-items: center;
+  margin-right: 15px;
+  text-align:center;
+  display:flex;
+  flex-direction:row;
+}
+.imageSide{
+  justify-content: left;
+  align-items: center;
+  margin-left: 3px;
+  text-align:center;
+  display:flex;
+}
 .drawer{
   height:100%;
   z-index: 1000;
   position:fixed;
   background-color: #68161c;
   top:40;
-  margin-top: 52px;
+  margin-top: 50px;
   padding:10px;
   padding-top:60px;
   align-items: center;
@@ -210,8 +249,21 @@ color:#68161c;
 .itemList{
   display:grid;
   grid-template-columns: 30% 70%;
-  
+  height: 60px;
+  transition:all ease 0.3s;
+}
+.itemList:hover{
+  display:grid;
+  grid-template-columns: 30% 70%;
+  height: 80px;
+  cursor:pointer
 }
 .itemParent{
   margin-top:30px;
+}
+.itemList{
+  border-radius:5px;
+  padding:6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* border:1px #270207 solid; */
 }

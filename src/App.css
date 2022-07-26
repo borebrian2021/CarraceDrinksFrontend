@@ -120,3 +120,40 @@ color:#68161c;
     width: 15px;
    
   }
+.logoBig{
+  height:280px;
+}
+.hundred{
+  height:100%;
+}
+.center_first{
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+.spring1{
+  height:200px;
+}
+.spring2{
+  height:300px;
+
+}
+
+.drawer{
+  margin-top:50px;
+  height:100%;
+  position:fixed;
+  top:60;
+  left:0;
+  width:200px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.drawer_small{
+  position:relative;
+  right:0;
+  top:0;
+  height:100%;
+  width:40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-top-left-radius: 50px;
+}

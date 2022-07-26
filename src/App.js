@@ -1,14 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 import './font-awesome/css/font-awesome.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import NavBar from './Components/NavBar'
 import DrinkBody from './Components/DrinkBody'
-
+import Drawer from './Components/Drawer'
 function App() {
   return (
     <div className="Navbar">
      <NavBar/>
-    <DrinkBody/>
+    <Drawer/>
+
+    {/* <DrinkBody/> */}
     </div>
   );
 }

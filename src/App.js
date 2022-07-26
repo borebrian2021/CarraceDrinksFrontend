@@ -5,13 +5,14 @@ import 'bootstrap/dist/css/bootstrap.css'
 import NavBar from './Components/NavBar'
 import DrinkBody from './Components/DrinkBody'
 import Drawer from './Components/Drawer'
+// import {motion} from 'framer-motion'
 function App() {
   return (
     <div className="Navbar">
      <NavBar/>
-    <Drawer/>
+    {/* <Drawer/> */}
 
-    {/* <DrinkBody/> */}
+    <DrinkBody />
     </div>
   );
 }

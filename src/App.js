@@ -10,8 +10,7 @@ function App() {
   return (
     <div className="Navbar">
      <NavBar/>
-    {/* <Drawer/> */}
-
+    <Drawer/>
     <DrinkBody />
     </div>
   );

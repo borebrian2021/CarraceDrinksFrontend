@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+html{
+  background-color:#68161c;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -86,7 +88,7 @@ color:#68161c;
     border:none;
     height:35px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 50px;
+    border-radius: 5px;
     transition:all ease 0.3s;
     outline:none;
     margin-right:15px;
@@ -99,7 +101,6 @@ color:#68161c;
     height:40px;
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 50px;
   }
  
   .icons_{
@@ -125,7 +126,7 @@ color:#68161c;
    
   }
 .logoBig{
-  height:340px;
+  height:260px;
 }
 .p_white{
   color:white;
@@ -137,11 +138,19 @@ color:#68161c;
   background-color:transparent;
   padding: 6px;
   color:white;
+  transition:all ease 0.3s;
+}
+.getStarted:hover{
+  border:1px white solid;
+  border-radius: 40px;
+  background-color:transparent;
+  padding: 16px;
+  color:white;
 }
 .hundred{
   height:800px !important;
   /* border-top-left-radius: 50px; */
-  margin-top: 60px;
+  /* margin-top: 60px; */
   /* margin-left:150px !important; */
   background-image: url('./images/bg.jpg');
   background-repeat: no-repeat;
@@ -168,13 +177,14 @@ color:#68161c;
   height:100%;
   z-index: 1000;
   position:fixed;
+  background-color: #68161c;
   top:40;
   left:0;
   /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; */
-  width:150px;
+  width:300px;
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
-/* .drawer_small{
+.drawer_small{
   position:absolute;
   right:0;
   top:0;
@@ -182,7 +192,7 @@ color:#68161c;
   width:40px;
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   border-top-left-radius: 50px;
-} */
+}
 .bg_dark{
   background-color:rgb(0, 0, 0, 0.6);
   height:100%;

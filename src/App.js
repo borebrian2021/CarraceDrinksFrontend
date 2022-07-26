@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import NavBar from './Components/NavBar'
 import DrinkBody from './Components/DrinkBody'
 import DrinksDetails from './Components/DrinksDetails'
+import LogIn from './Components/LogIn'
+import UploadForm from './Components/UploadForm'
 
 import Drawer from './Components/Drawer'
 // import {motion} from 'framer-motion'
@@ -13,9 +15,13 @@ function App() {
     <div className="Navbar">
      <NavBar/>
     <Drawer/>
+    <LogIn/>
     {/* <DrinkBody />
      */}
-     <DrinksDetails/>
+     {/* <DrinksDetails/>
+      */}
+{/* <UploadForm/> */}
+
     </div>
   );
 }

@@ -53,28 +53,70 @@ width:50%;
 display:flex;
 text-align: left;
 justify-content:left;
+align-items:center;
 color:#68161c;
 }
-
-  .rightSide{
+.rightSide{
     text-align: right;
     justify-content: right;
-    align-items:right;
+    align-items:center;
     display:flex;
+    padding-right:10px;
+    color:#68161c;
   }
+
   .logo{
-    height:40px;
+    height:30px;
     margin:5px;
-    width:40px;
+    width:30px;
+    transition: 0.3s ease all;
+  }
+  .logo:hover{
+    height:45px;
+    margin:5px;
+    width:45px;
+    transition: 0.3s ease all;
   }
   .logoText{
-    margin-top:15px;
   }
   .search{
     /* border:1px solid #68161c; */
     padding: 5px;
-    margin: 10px;
     border:none;
+    height:16px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 50px;
+    transition:all ease 0.3s;
+    outline:none;
+    margin-right:15px;
+  }
+  .search:hover{
+    /* border:1px solid #68161c; */
+    padding: 5px;
+    margin: 10px;
+    border:none;
+    height:25px;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50px;
+  }
+ 
+  .icons{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding:10px;
+    height: 10px;
+    width:10px;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    display:flex;
+    transition:all 0.3s ease;
+    border-radius:50px;
+  }
+  .icons:hover{
+   
+    padding:15px;
+    height: 15px;
+    width: 15px;
+   
   }

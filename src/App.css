@@ -14,7 +14,13 @@ html{
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+/* @font-face {
+  font-family: best;
+  src: url('./fonts/best.ttf');
+}
+*{
+  font-family:best !important
+} */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -189,7 +195,8 @@ color:#68161c;
 .labelTitle{
   height:40px;
   color:#f38600;
-  background:#68161c;
+  width: 200px;
+  background-color:#68161c;
 }
 .center_first{
   justify-content:center;
@@ -244,6 +251,10 @@ color:#68161c;
 }
 .bg_dark{
   background-color:rgb(0, 0, 0, 0.6);
+  height:100%;
+}
+.bg_dark2{
+  background-color:rgb(0, 0, 0, 0.8);
   height:100%;
 }
 .itemList{

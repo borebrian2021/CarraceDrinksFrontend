@@ -173,16 +173,18 @@ color:#68161c;
 }
 
 .drawer{
-  /* margin-top:30px; */
   height:100%;
   z-index: 1000;
   position:fixed;
   background-color: #68161c;
   top:40;
+  padding:10px;
+  padding-top:60px;
+  align-items: center;
+  justify-content:center;
+  text-align:center;
   left:0;
-  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; */
   width:300px;
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 .drawer_small{
   position:absolute;

@@ -1,5 +1,24 @@
 import react, { useState } from 'react'
 import { motion } from 'framer-motion'
+const variants_ ={
+    hidden:{
+        opacity:0,
+        // x:'100vw'
+    },
+    visible:{
+        opacity:1,
+        // x:0,
+        transition:{
+            type:'spring',
+            delay:0.8
+        }
+    },
+    exit:{
+        x:'-100vw',
+        transition:{ease:'easeInOut'}
+      
+    }
+}
 function UploadForm() {
     return (
         <motion.div className="ddrinksDetails pt-4 ">

@@ -23,9 +23,17 @@ const variants_ = {
 
 
 function DrinksDetails() {
+    const [category, setCategory] = useState()
+    const [name, setName] = useState()
+    const [capacity, setCapacity] = useState()
+    const [image, setImage] = useState()
+    const [price, setPrice] = useState()
+    const [percentage, setPercentage] = useState()
+    const [description, setDescription] = useState()
+    const [cog, setCog] = useState()
     const [drinks,setDrinks]=useState([])
      function handleDrinkClick(index1){
-    alert("Abracadabra")
+    setImage(drinks[index1].imageSrc)
      }
     useEffect(()=>{
         fetch('http://localhost:3000/drinks')
@@ -42,7 +50,7 @@ function DrinksDetails() {
     
 
 
-                    <motion.img initial={{ x: 1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 1.4, stiffness: 200, type: "spring" }} src="https://purepng.com/public/uploads/large/purepng.com-alcohol-bottlebottle-food-wine-object-alcohol-beverage-cocktail-liquor-whiskey-drunk-941524624582wlel2.png" className="logoBig" />
+                    <motion.img initial={{ x: 1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 1.4, stiffness: 200, type: "spring" }} src={image} className="logoBig" />
 
 
                     <motion.div className="labelTitle " initial={{ x: 1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 1.6, stiffness: 200, type: "spring" }} ><h3>Lanson Noble Cuvee | 40% | Scotland</h3><br></br><h2 className='text-white'>Ksh. 10,000.00</h2></motion.div>

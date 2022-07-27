@@ -2,7 +2,10 @@
   text-align: center;
 }
 html{
-  background-color:#68161c;
+  /* background-color:#68161c; */
+  background-image: url('./images/bg.jpg');
+background-repeat:no-repeat;
+background-size: cover;
 }
 .App-logo {
   height: 40vmin;
@@ -192,12 +195,13 @@ color:#68161c;
 
 }
 .footer{
-  position:absolute;
+  position:relative;
   bottom: 0;
   left:0;
   background-color: #68161c;
-  Height:250px;
+  Height:80px;
   width: 100%;
+  /* margin-top:800px */
 }
 .ddrinksDetails{
   height:800px !important;
@@ -276,6 +280,7 @@ color:#68161c;
   position:fixed;
   background-color: #68161c;
   top:40;
+  overflow: scroll;
   margin-top: 50px;
   padding:10px;
   padding-top:60px;
@@ -427,4 +432,25 @@ a {
 }
 .bottles{
   height:250px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #7a5158;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #68161c; 
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }

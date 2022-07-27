@@ -15,17 +15,15 @@ import Drawer from './Components/Drawer'
 // import {motion} from 'framer-motion'
 function App() {
   return (
-    <div className="Navbar">
-     <NavBar/>
-    {/* <Drawer/> */}
-    {/* <LogIn/>
-     */}
-<DrinksDetails/>
-    {/* <DrinkBody /> */}
+    <div >
+      <NavBar />
+      {/* <Drawer/> */}
+      <LogIn/>
     
-     
-{/* <UploadForm/> */}
-</Footer>>
+      {/* <DrinksDetails /> */}
+      {/* <DrinkBody /> */}
+      {/* <UploadForm/> */}
+      {/* <Footer /> */}
     </div>
   );
 }

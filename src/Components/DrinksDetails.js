@@ -3,10 +3,9 @@ import {motion} from 'framer-motion'
 import Drawer from './Drawer'
 function DrinksDetails(){
     return(
-        <motion.div  className="drinksPage">
-                <motion.div initial={{x:1500}} animate={{x:0}} transition={{duration:0.8, delay:1.4, stiffness:200,type: "spring"}}>
+        <div className="drinksPage">
         <Drawer/>
-        </motion.div>
+       
             <div class="row bg_dark2">
                 <div class="col-12 col-lg-12 col-md-12 col-sm-12 p-5 center_first">
                   {/* <motion.img initial={{x:1500}} animate={{x:-200}} transition={{duration:0.8, delay:1, stiffness:200,type: "spring"}} src="https://i.ibb.co/wQ4G0w1/flatiron-brew.png" class="spring1"/>
@@ -30,7 +29,7 @@ function DrinksDetails(){
              
 
             </div>
-        </motion.div>
+        </div>
     )
 }
 

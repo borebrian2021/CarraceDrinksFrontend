@@ -5,7 +5,7 @@ function UploadForm() {
         <motion.div className="ddrinksDetails pt-4 ">
             <form class="row bg_dark2">
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 p-5 center_first">
-aSDGH
+<img src="./images/bottles.png" className='bottles'>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 p-5  text-left">
                     <h6 class="text-white">Brian Kimutai Koskei</h6>

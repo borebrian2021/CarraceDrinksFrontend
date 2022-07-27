@@ -5,24 +5,19 @@ import 'bootstrap/dist/css/bootstrap.css'
 import NavBar from './Components/NavBar'
 import Footer from './Components/Footer'
 import LogIn from './Components/LogIn'
-import {AnimatePresence} from 'framer-motion'
-
+import RoutesAnimator from './Components/RoutesAnimator'
 import {
   BrowserRouter as Router,  Routes,  Route,useLocation
-}
-from "react-router-dom";
+}from "react-router-dom";
 // import {motion} from 'framer-motion'
 function App() {
-  const location=useLocation();
   return (
-   
-     
-    
-   
+             <Router>
+              <NavBar/>
+              <RoutesAnimator/>
+              <Footer/>
+              </Router>
       
-     
-
-  
 
   );
 }

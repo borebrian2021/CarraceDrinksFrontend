@@ -1,5 +1,6 @@
 import react,{useState} from 'react'
 import {motion} from 'framer-motion'
+import {Link} from 'react-router-dom'
 function DrinkBody(){
     return(
         <motion.div  className="container-fluid  hundred">
@@ -14,11 +15,14 @@ function DrinkBody(){
 <motion.img initial={{x:1500}} animate={{x:0}} transition={{duration:0.8, delay:1.4, stiffness:200,type: "spring"}} src="../../images/onWelcome.png" className="logoBig"/>
 <motion.h3 className="p_white" initial={{x:1500}} animate={{x:0}} transition={{duration:0.8, delay:1.6, stiffness:200,type: "spring"}} >Carrace Drinks</motion.h3>
 <motion.p className="p_white" initial={{x:1500}} animate={{x:0}} transition={{duration:0.8, delay:1.8, stiffness:200,type: "spring"}} >Carrace Drinks Trusted by millions to discover and buy the right wine every time.</motion.p>
-<motion.Button className="getStarted" initial={{x:1500}} animate={{x:0}} transition={{duration:0.8, delay:2, stiffness:200,type: "spring"}}>Get Started</motion.Button>
-                </div>
-             
+<motion.div  initial={{x:1500}} animate={{x:0}} transition={{duration:0.8, delay:2, stiffness:200,type: "spring"}}>d
 
-            </div>
+<Link to="./DrinksDetails" className="getStarted">
+    Continue
+</Link>  
+</motion.div>
+</div>
+</div>
 
 
         </motion.div>

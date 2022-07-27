@@ -1,4 +1,4 @@
-import react, { useState } from 'react'
+import react, { useState,useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Drawer from './Drawer'
 const variants_ = {
@@ -20,7 +20,16 @@ const variants_ = {
 
     }
 }
+
+
 function DrinksDetails() {
+    useEffect(()=>{
+        fetch('http://localhost:3000/drinks')
+        .then((data)=>data.json())
+        .then((data1)=>{
+        
+          console.log(data1)
+        })})
     return (
         <motion.div variants={variants_} initial="hidden" animate="visible" exit="exit" className="drinksPage" >
 

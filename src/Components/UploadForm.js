@@ -1,5 +1,32 @@
 import react, { useState } from 'react'
+
+
+
+
 import { motion } from 'framer-motion'
+const [category,setContent]=useState("")
+const [name,setName]=useState("")
+const [capacity,setCapacity]=useState("")
+const [image,setImage]=useState("")
+const [drinkPoster,setdrinkPoster]=useState("")
+const [smallDrink,setsmallDrink]=useState("")
+const [price,setPrice]=useState("")
+const [percentage,setPercentage]=useState("")
+const [description,setDescription]=useState("")
+const [cog,setCog]=useState("")
+const [brand,setBrand]=useState("")
+
+function handleSetCategory(e){
+    setContent(e.target.value)
+}
+
+
+
+
+
+
+
+
 const variants_ = {
     hidden: {
         opacity: 0,

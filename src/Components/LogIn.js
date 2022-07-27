@@ -32,7 +32,7 @@ function LogIn() {
                     <h4 className="text-white">Admin Login</h4>
                     <input type="text" placeholder="Username" />
                     <input type="password" placeholder="Password" />
-                    <motion.Button onClick={gotoForms} className="getStarted" initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 1, stiffness: 200, type: "spring" }} type="submit">Log In</motion.Button>
+                    <motion.Button onClick={gotoForms} className="getStarted" initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 0.5, stiffness: 200, type: "spring" }} type="submit">Log In</motion.Button>
                 </form>
             </motion.div>
         </motion.div>

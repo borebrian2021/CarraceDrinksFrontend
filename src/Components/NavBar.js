@@ -22,7 +22,7 @@ function NavBar() {
             <div className="leftSide" onClick={goHome}><motion.img transition={{ duration: 0.8, delay: 1 }} initial={{ opacity: "0" }} animate={{ opacity: 1 }} class="logo" src="./images/carraceLogo.png" /><small class="logoText">Carrace Drinks</small>  </div>
             <div className="rightSide" onClick={goToLogin}>
 
-                <span class="icons_"  onClick={goToLogin}><i class="fa fa-user"></i></span>
+                <span class="icons_"  onClick={goToLogin}><i class="fa fa-plus"></i></span>
             </div>
 
         </motion.div>

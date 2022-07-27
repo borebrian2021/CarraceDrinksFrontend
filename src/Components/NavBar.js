@@ -10,9 +10,9 @@ function NavBar() {
             }}
         >
             <div className="leftSide"><motion.img transition={{ duration: 0.8, delay: 1 }} initial={{ opacity: "0" }} animate={{ opacity: 1 }} class="logo" src="./images/carraceLogo.png" /><small class="logoText">Carrace Drinks</small>  </div>
-            <div className="rightSide">
+            <div className="rightSide" onclick={gotologin}>
                
-                <span class="icons_"><i class="fa fa-user"></i></span>
+                <span class="icons_" ><i class="fa fa-user"></i></span>
             </div>
 
         </motion.div>

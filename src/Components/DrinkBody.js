@@ -38,11 +38,10 @@ const proceed=(()=>{
 
                   <motion.img initial={{x:1500}} animate={{x:-220}} transition={{duration:1.2, delay:1.3, stiffness:200,type: "spring"}} src="https://images.punkapi.com/v2/4.png" class="spring2"/>
                 */}
-<motion.img initial={{x:1500}} animate={{x:0}} transition={{duration:0.8, delay:1.4, stiffness:200,type: "spring"}} src="../../images/onWelcome.png" className="logoBig"/>
-<motion.h3 className="p_white" initial={{x:1500}} animate={{x:0}} transition={{duration:0.8, delay:1.6, stiffness:200,type: "spring"}} >Carrace Drinks</motion.h3>
-<motion.p className="p_white" initial={{x:1500}} animate={{x:0}} transition={{duration:0.8, delay:1.8, stiffness:200,type: "spring"}} >Carrace Drinks Trusted by millions to discover and buy the right wine every time.</motion.p>
-
-<motion.Button onClick={proceed} className="getStarted" initial={{x:1500}} animate={{x:0}} transition={{duration:0.8, delay:2, stiffness:200,type: "spring"}}>Get Started
+<motion.img initial={{x:-1500}} animate={{x:0}} transition={{duration:0.8, delay:1, stiffness:120,type: "spring"}} src="../../images/onWelcome.png" className="logoBig"/>
+<motion.h3 className="p_white" initial={{x:-1500}} animate={{x:0}} transition={{duration:0.8, delay:1.2, stiffness:120,type: "spring"}} >Carrace Drinks</motion.h3>
+<motion.p className="p_white" initial={{x:-1500}} animate={{x:0}} transition={{duration:0.8, delay:1.4, stiffness:120,type: "spring"}} >Carrace Drinks Trusted by millions to discover and buy the right wine every time.</motion.p>
+<motion.Button onClick={proceed} className="getStarted" initial={{x:-1500}} animate={{x:0}} transition={{duration:0.8, delay:1.6, stiffness:120,type: "spring"}}>Get Started
 </motion.Button>     
     </div>
  </div>

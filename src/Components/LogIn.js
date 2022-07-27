@@ -1,43 +1,41 @@
 import react, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
+const variants_ = {
+    hidden: {
+        opacity: 0,
+        x: '100vw'
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            type: 'spring',
+            delay: 0.3
+        }
+    },
+    exit: {
+        x: '100vw',
+        transition: { ease: 'easeInOut' }
 
+    }
+}
 function LogIn() {
-    const navigate=useNavigate();
-    function gotoForms(){
+    const navigate = useNavigate();
+    function gotoForms() {
         navigate('/UploadForm')
     }
     return (
-        <div className="loginDetails pt-4 " >
-             <motion.div  initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.3, stiffness: 200, type: "spring" }}>
- <form className="login">
-    <h4 className="text-white">Admin Login</h4>
-  <input type="text" placeholder="Username"/>
-  <input type="password" placeholder="Password"/>
-  <motion.Button onClick={gotoForms}  className="getStarted" initial={{ x: 1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay:1, stiffness: 200, type: "spring" }} type="submit">Log In</motion.Button>
-
-  </form>
-</motion.div>
-
-            {/* <form class="row bg_dark3">
-                <div class="col-12 col-lg-12 col-md-12 col-sm-12 p-5  ">
-             
-               
-                    <h4 class="text-white">Admin Log In</h4>
-                    <motion.label initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 0.2, stiffness: 200, type: "spring" }} class="text-white">Username:</motion.label>
-                    <motion.input initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 0.4, stiffness: 200, type: "spring" }} placeholder='Enter Username...' class="form-control m-2" />
-                    <motion.label initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 0.6, stiffness: 200, type: "spring" }} class="text-white">Password:</motion.label>
-                    <motion.input initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 0.8, stiffness: 200, type: "spring" }} placeholder='Enter password...' type="password" class="form-control m-2" />
-                   
-
-                    
-
-                    <motion.Button  className="getStarted" initial={{ x: 1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 3, stiffness: 200, type: "spring" }} type="submit">Submit</motion.Button>
-                </div>
-            </form> */}
-
-
-        </div>
+        <motion.div className="loginDetails pt-4 " variants={variants_} initial="hidden" exit="exit"  animate="visible">
+            <motion.div initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.3, stiffness: 200, type: "spring" }}>
+                <form className="login">
+                    <h4 className="text-white">Admin Login</h4>
+                    <input type="text" placeholder="Username" />
+                    <input type="password" placeholder="Password" />
+                    <motion.Button onClick={gotoForms} className="getStarted" initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 1, stiffness: 200, type: "spring" }} type="submit">Log In</motion.Button>
+                </form>
+            </motion.div>
+        </motion.div>
     )
 }
 

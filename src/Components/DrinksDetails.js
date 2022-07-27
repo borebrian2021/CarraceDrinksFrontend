@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 import Drawer from './Drawer'
 function DrinksDetails(){
     return(
-        <div className="drinksPage">
+        <div className="drinksPage" >
         <Drawer/>
        
             <div class="row bg_dark2">

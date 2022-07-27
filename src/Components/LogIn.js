@@ -1,6 +1,12 @@
 import react, { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
+
 function LogIn() {
+    const navigate=useNavigate();
+    function gotoForms(){
+        navigate('/UploadForm')
+    }
     return (
         <div className="loginDetails pt-4 " >
              <motion.div  initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.3, stiffness: 200, type: "spring" }}>
@@ -8,7 +14,7 @@ function LogIn() {
     <h4 className="text-white">Admin Login</h4>
   <input type="text" placeholder="Username"/>
   <input type="password" placeholder="Password"/>
-  <motion.Button  className="getStarted" initial={{ x: 1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay:1, stiffness: 200, type: "spring" }} type="submit">Log In</motion.Button>
+  <motion.Button onClick={gotoForms}  className="getStarted" initial={{ x: 1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay:1, stiffness: 200, type: "spring" }} type="submit">Log In</motion.Button>
 
   </form>
 </motion.div>

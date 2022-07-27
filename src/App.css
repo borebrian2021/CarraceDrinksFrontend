@@ -59,6 +59,7 @@ background-size: cover;
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 .leftSide{
+  cursor:pointer;
 height:100%;
 width:50%;
 display:flex;
@@ -129,7 +130,7 @@ color:#68161c;
  
   .icons_{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  
+    cursor: pointer;
     background-color: #39040e;
     padding: 10px;
     justify-content:center;

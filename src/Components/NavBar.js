@@ -13,7 +13,7 @@ function NavBar() {
     }
     return (
         <motion.div className="nav-bar"
-            transition={{ type: "spring", duration: 0.2, stiffness: 200 }}
+            transition={{ type: "spring", duration: 0.2, stiffness: 200,delay:1 }}
             initial={{ y: -250 }}
             animate={{
                 y: 0

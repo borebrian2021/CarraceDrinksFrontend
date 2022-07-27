@@ -4,9 +4,12 @@ function UploadForm() {
     return (
         <motion.div className="ddrinksDetails pt-4 ">
             <form class="row bg_dark2">
-                <div class="col-12 col-lg-12 col-md-12 col-sm-12 p-5  text-left">
-                <h6 class="text-white">Brian Kimutai Koskei</h6>
-                <h6 class="text-white">Admin</h6>
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 p-5 center_first">
+aSDGH
+                </div>
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 p-5  text-left">
+                    <h6 class="text-white">Brian Kimutai Koskei</h6>
+                    <h6 class="text-white">Admin</h6>
 
                     <h4 class="text-white">Upload Product</h4>
                     <motion.label initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 0.2, stiffness: 200, type: "spring" }} class="text-white">Brand Name:</motion.label>
@@ -25,24 +28,24 @@ function UploadForm() {
                     </motion.select>
 
                     <motion.label initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 1.4, stiffness: 200, type: "spring" }} class="text-white">Price:</motion.label>
-                    <motion.input  initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 1.6, stiffness: 200, type: "spring" }}  placeholder='Enter price...' class="form-control m-2"/>
+                    <motion.input initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 1.6, stiffness: 200, type: "spring" }} placeholder='Enter price...' class="form-control m-2" />
 
                     <motion.label initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 1.8, stiffness: 200, type: "spring" }} class="text-white">Alcohol Percentage:</motion.label>
-                    <motion.input initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 2, stiffness: 200, type: "spring" }}  placeholder='Enter alcohol percentage...' class="form-control m-2"/>
-               
+                    <motion.input initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 2, stiffness: 200, type: "spring" }} placeholder='Enter alcohol percentage...' class="form-control m-2" />
+
                     <motion.label initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 2.2, stiffness: 200, type: "spring" }} class="text-white">Description:</motion.label>
-                    <motion.input initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 2.4, stiffness: 200, type: "spring" }}  placeholder='Enter description...' class="form-control m-2"/>
-               
-                    
+                    <motion.input initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 2.4, stiffness: 200, type: "spring" }} placeholder='Enter description...' class="form-control m-2" />
+
+
                     <motion.label initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 2.6, stiffness: 200, type: "spring" }} class="text-white">Brand:</motion.label>
-                    <motion.input initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 2.8, stiffness: 200, type: "spring" }}  placeholder='Enter brand...' class="form-control m-2"/>
-               
+                    <motion.input initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 2.8, stiffness: 200, type: "spring" }} placeholder='Enter brand...' class="form-control m-2" />
 
 
 
 
 
-                    <motion.Button  className="getStarted" initial={{ x: 1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 3, stiffness: 200, type: "spring" }} type="submit">Submit</motion.Button>
+
+                    <motion.Button className="getStarted" initial={{ x: 1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 3, stiffness: 200, type: "spring" }} type="submit">Submit</motion.Button>
                 </div>
             </form>
 

@@ -6,7 +6,6 @@ import NavBar from './Components/NavBar'
 import DrinkBody from './Components/DrinkBody'
 import DrinksDetails from './Components/DrinksDetails'
 import LogIn from './Components/LogIn'
-import DashBoard from './Components/Dashboard'
 
 import UploadForm from './Components/UploadForm'
 
@@ -20,12 +19,11 @@ function App() {
     {/* <LogIn/>
      */}
 
-     <DashBoard/>
     {/* <DrinkBody />
      */}
      {/* <DrinksDetails/>
       */}
-{/* <UploadForm/> */}
+<UploadForm/>
 
     </div>
   );

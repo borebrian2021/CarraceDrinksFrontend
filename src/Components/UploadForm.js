@@ -4,14 +4,16 @@ function UploadForm() {
     return (
         <motion.div className="ddrinksDetails pt-4 ">
             <form class="row bg_dark2">
-                <div class="col-12 col-lg-6 col-md-6 col-sm-12 p-5 center_first">
-<img src="./images/bottles.png" className='bottles'>
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 p-5 center_first_flex">
+<img src="./images/bottles.png" className='bottles'/>
+<h6 class="text-white">Brian Kimutai Koskei</h6>
+                    <h6 class="text-white">Admin</h6>
+                    <h6 class="text-white">Bevarage upload form.</h6>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 p-5  text-left">
-                    <h6 class="text-white">Brian Kimutai Koskei</h6>
-                    <h6 class="text-white">Admin</h6>
+                 
 
-                    <h4 class="text-white">Upload Product</h4>
+                    <h4 class="text-white">Upload bevarage</h4>
                     <motion.label initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 0.2, stiffness: 200, type: "spring" }} class="text-white">Brand Name:</motion.label>
                     <motion.input initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 0.4, stiffness: 200, type: "spring" }} placeholder='Enter Brand name...' class="form-control m-2" />
                     <motion.label initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 0.6, stiffness: 200, type: "spring" }} class="text-white">Capacitx:</motion.label>

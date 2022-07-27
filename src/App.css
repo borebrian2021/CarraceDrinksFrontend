@@ -222,6 +222,13 @@ color:#68161c;
   align-items:center;
   text-align:center;
 }
+.center_first_flex{
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  display:flex;
+  flex-direction: column;
+}
 .spring1{
   height:200px;
 }
@@ -398,4 +405,7 @@ a {
   right: 10px;
   bottom: 10px;
   font-size: 12px;
+}
+.bottles{
+  height:250px;
 }

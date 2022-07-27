@@ -11,7 +11,7 @@ function Drawer(props) {
                     props.drinks.map((drink,index)=>{
                         return(
 
-                            <div className="itemList">
+                            <div className="itemList" onClick={props.onDrrinkClick(index)}>
 
                             <div className="imageSide">
                                 <img class="avatar" src={drink.imageSrc} />
@@ -31,7 +31,7 @@ function Drawer(props) {
                 }
               
             
-                </div>
+            </div>
         </div>
     )
 }

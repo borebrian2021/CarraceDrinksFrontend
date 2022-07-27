@@ -6,6 +6,8 @@ import NavBar from './Components/NavBar'
 import DrinkBody from './Components/DrinkBody'
 import DrinksDetails from './Components/DrinksDetails'
 import LogIn from './Components/LogIn'
+import DashBoard from './Components/Dashboard'
+
 import UploadForm from './Components/UploadForm'
 
 import Drawer from './Components/Drawer'
@@ -14,8 +16,11 @@ function App() {
   return (
     <div className="Navbar">
      <NavBar/>
-    <Drawer/>
-    <LogIn/>
+    {/* <Drawer/> */}
+    {/* <LogIn/>
+     */}
+
+     <DashBoard/>
     {/* <DrinkBody />
      */}
      {/* <DrinksDetails/>

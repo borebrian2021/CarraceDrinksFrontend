@@ -182,14 +182,22 @@ color:#68161c;
 }
 .drinksPage{
   height:800px !important;
-  /* padding-left:300px; */
+  padding-left:300px;
   /* border-top-left-radius: 50px; */
   /* margin-top: 60px; */
   background-image: url('./images/bg.jpg');
   background-repeat: no-repeat;
   background-size:contain;
   background-size:cover;
-  
+
+}
+.footer{
+  position:absolute;
+  bottom: 0;
+  left:0;
+  background-color: #68161c;
+  Height:250px;
+  width: 100%;
 }
 .ddrinksDetails{
   height:800px !important;

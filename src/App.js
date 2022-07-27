@@ -3,6 +3,8 @@ import './App.css';
 import './font-awesome/css/font-awesome.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import NavBar from './Components/NavBar'
+import Footer from './Components/Footer'
+
 import DrinkBody from './Components/DrinkBody'
 import DrinksDetails from './Components/DrinksDetails'
 import LogIn from './Components/LogIn'
@@ -18,13 +20,12 @@ function App() {
     {/* <Drawer/> */}
     {/* <LogIn/>
      */}
-
+<DrinksDetails/>
     {/* <DrinkBody /> */}
     
-     <DrinksDetails/>
      
-<UploadForm/>
-
+{/* <UploadForm/> */}
+</Footer>>
     </div>
   );
 }

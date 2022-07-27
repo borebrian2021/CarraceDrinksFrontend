@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-html{
+html,body{
   /* background-color:#68161c; */
   background-image: url('./images/bg.jpg');
 background-repeat:no-repeat;
@@ -127,7 +127,9 @@ color:#68161c;
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
- 
+ .nav-bar{
+  z-index: 1000;
+ }
   .icons_{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;

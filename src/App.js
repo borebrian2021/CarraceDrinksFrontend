@@ -6,7 +6,6 @@ import NavBar from './Components/NavBar'
 import DrinkBody from './Components/DrinkBody'
 import DrinksDetails from './Components/DrinksDetails'
 import LogIn from './Components/LogIn'
-import {Swithc}
 
 import UploadForm from './Components/UploadForm'
 
@@ -20,10 +19,10 @@ function App() {
     {/* <LogIn/>
      */}
 
-    {/* <DrinkBody />
-     */}
-     {/* <DrinksDetails/>
-      */}
+    {/* <DrinkBody /> */}
+    
+     <DrinksDetails/>
+     
 <UploadForm/>
 
     </div>

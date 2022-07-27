@@ -1,11 +1,8 @@
 import react,{useState} from 'react'
 import {motion} from 'framer-motion'
-import NavBar from './NavBar'
-import { Navbar } from 'react-bootstrap'
 function DrinkBody(){
     return(
         <motion.div  className="container-fluid  hundred">
-            <motion.Navbar initial={{x:1500}} animate={{x:0}} transition={{duration:0.8, delay:1.4, stiffness:200,type: "spring"}} />
             <div class="row bg_dark">
                 <div class="col-12 col-lg-12 col-md-12 col-sm-12 p-5 center_first">
                   {/* <motion.img initial={{x:1500}} animate={{x:-200}} transition={{duration:0.8, delay:1, stiffness:200,type: "spring"}} src="https://i.ibb.co/wQ4G0w1/flatiron-brew.png" class="spring1"/>

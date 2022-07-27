@@ -180,6 +180,17 @@ color:#68161c;
   /* background-color: red; */
   /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
 }
+.drinksPage{
+  height:800px !important;
+  /* padding-left:300px; */
+  /* border-top-left-radius: 50px; */
+  /* margin-top: 60px; */
+  background-image: url('./images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-size:cover;
+  
+}
 .ddrinksDetails{
   height:800px !important;
   /* padding-left:300px; */

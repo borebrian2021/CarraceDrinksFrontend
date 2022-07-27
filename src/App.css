@@ -175,7 +175,7 @@ color:#68161c;
   color:white;
 }
 .hundred{
-  height:800px !important;
+  height:900px !important;
   /* border-top-left-radius: 50px; */
   /* margin-top: 60px; */
   /* margin-left:150px !important; */
@@ -319,13 +319,13 @@ color:#68161c;
 .itemList{
   display:grid;
   grid-template-columns: 30% 70%;
-  height: 60px;
+  height: 80px;
   transition:all ease 0.3s;
 }
 .itemList:hover{
   display:grid;
   grid-template-columns: 30% 70%;
-  height: 80px;
+  height: 90px;
   cursor:pointer
 }
 .itemParent{

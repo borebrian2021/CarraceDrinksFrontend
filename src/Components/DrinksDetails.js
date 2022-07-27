@@ -23,17 +23,21 @@ const variants_ = {
 
 
 function DrinksDetails() {
+    const [drinks,setDrinks]=useState([])
+
     useEffect(()=>{
         fetch('http://localhost:3000/drinks')
         .then((data)=>data.json())
         .then((data1)=>{
+
+        setDrinks(data1);
         
-          console.log(data1)
-        })})
+
+        })},[])
     return (
         <motion.div variants={variants_} initial="hidden" animate="visible" exit="exit" className="drinksPage" >
 
-            <Drawer />
+            <Drawer drinks={drinks}/>
 
             <div class="row bg_dark2">
                 <div class="col-12 col-lg-12 col-md-12 col-sm-12 p-5 center_first">

@@ -38,6 +38,7 @@ function DetailsBody(props){
        </motion.div>
     )
 }
+
 function DrinksDetails() {
     const [switchDrinks, setSwitchDrink] = useState(true)
     const [category, setCategory] = useState()
@@ -48,8 +49,7 @@ function DrinksDetails() {
     const [percentage, setPercentage] = useState()
     const [description, setDescription] = useState()
     const [cog, setCog] = useState()
-    const [drinks, setDrinks] = useState([])
-    
+    const [drinks, setDrinks] = useState([])    
     const [combinedObJect,setCombined]=useState([]);
 
     function handleDrinkClick(index1) {
@@ -77,9 +77,11 @@ function DrinksDetails() {
 <motion.div variants={variants_} initial="hidden" animate="visible" exit="exit" className="drinksPage" >
 
 <Drawer drinks={drinks} onDrrinkClick={handleDrinkClick} />
-{switchDrinks &&  <DetailsBody combinedObJect={combinedObJect}/>}
+{switchDrinks &&  < DetailsBody combinedObJect={combinedObJect}/>}
+{!switchDrinks &&  < DetailsBody combinedObJect={combinedObJect}/>}
 
 </motion.div>
+
         )
 }
 

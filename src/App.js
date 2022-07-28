@@ -12,7 +12,7 @@ import {
 // import {motion} from 'framer-motion'
 function App() {
   return (
-             <Router>
+              <Router>
               <NavBar/>
               <RoutesAnimator/>
               <Footer/>

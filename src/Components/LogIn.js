@@ -17,7 +17,6 @@ const variants_ = {
     exit: {
         x: '100vw',
         transition: { ease: 'easeInOut' }
-
     }
 }
 function LogIn() {

@@ -1,4 +1,4 @@
-import react, { useState } from 'react'
+import react, { useState,useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 const variants_ = {
@@ -21,18 +21,46 @@ const variants_ = {
     }
 }
 function LogIn() {
-    const navigate = useNavigate();
+    const navigate =useNavigate();
+    const [username,setUsername] = useState();
+    const [password,setPassword] = useState();
+    const [loginDetails,setLoginDetails]=useState();
+    useEffect(() => {
+       fetch('http://localhost:3000/users').
+       then((data)=>data.json()).
+       then((data1)=>{
+        setLoginDetails(data1);
+        console.log(data1)
+       })
+    }, []);
+    function login(event){
+        event.preventDefault()
+        if(username==loginDetails.username && password==loginDetails.password){
+            navigate('/BodyDetails')
+        }
+        else{
+            alert('Incorrect credentails.')
+        }
+        console.log(loginDetails.username)
+    }
+
+    function handleSetUsername(event){
+        setUsername(event.target.value)
+    }
+    function handleSetPassword(event){
+        setPassword(event.target.value)
+    }
     function gotoForms() {
         navigate('/UploadForm')
     }
     return (
         <motion.div className="loginDetails pt-4 " variants={variants_} initial="hidden" exit="exit"  animate="visible">
             <motion.div initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.3, stiffness: 200, type: "spring" }}>
-                <form className="login">
+                <form className="login" onSubmit={login}>
                     <h4 className="text-white">Admin Login</h4>
-                    <input type="text" placeholder="Username" />
-                    <input type="password" placeholder="Password" />
-                    <motion.Button onClick={gotoForms} className="getStarted" initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 0.5, stiffness: 200, type: "spring" }} type="submit">Log In</motion.Button>
+                    <input value={username} onChange={handleSetUsername} type="text" placeholder="Username"/>
+                    <input value={password} onChange={handleSetPassword} type="password" placeholder="Password"/>
+                    <motion.Button  className="getStarted" initial={{ x: -1500 }} animate={{ x: 0 }} transition={{ duration: 0.8, delay: 0.5, stiffness: 200, type: "spring" }} type="submit">Log In</motion.Button>
                 </form>
             </motion.div>
         </motion.div>

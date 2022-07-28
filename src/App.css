@@ -154,7 +154,10 @@ color:#68161c;
   }
 .logoBig{
   height:260px;
+  margin:30px 0 30px 0;
+  /* transition:all ease 0.4s; */
 }
+
 .p_white{
   color:white;
 
@@ -238,8 +241,8 @@ color:#68161c;
 
   width:auto;
   padding:15px;
-  box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.5) -3px -3px 6px 1px inset;
-  background-color:#68161c;
+  /* box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.5) -3px -3px 6px 1px inset; */
+  /* background-color:#68161c; */
   /* background-image: linear-gradient(to right, #3e3233 , #68161c); */
   color:#f38600;
 }

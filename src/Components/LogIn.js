@@ -24,13 +24,12 @@ function LogIn() {
     const navigate =useNavigate();
     const [username,setUsername] = useState();
     const [password,setPassword] = useState();
-    const [loginDetails,setLoginDetails]=useState();
+    const [loginDetails,setLoginDetails]=useState([]);
     useEffect(() => {
        fetch('http://localhost:3000/users').
        then((data)=>data.json()).
        then((data1)=>{
         setLoginDetails(data1);
-        console.log(data1)
        })
     }, []);
     function login(event){
@@ -41,7 +40,7 @@ function LogIn() {
         else{
             alert('Incorrect credentails.')
         }
-        console.log(loginDetails.username)
+        console.log(loginDetails.firstName)
     }
 
     function handleSetUsername(event){

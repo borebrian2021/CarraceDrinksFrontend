@@ -66,7 +66,7 @@ function DrinksDetails() {
     
     }
     useEffect(() => {
-        fetch('http://localhost:3000/drinks')
+        fetch('https://carracedrinks.herokuapp.com/drinks')
             .then((data) => data.json())
             .then((data1) => {
                 setDrinks(data1);

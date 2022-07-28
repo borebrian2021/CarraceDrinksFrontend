@@ -26,7 +26,7 @@ function LogIn() {
     const [password,setPassword] = useState();
     const [loginDetails,setLoginDetails]=useState([]);
     useEffect(() => {
-       fetch('http://localhost:3000/users').
+       fetch('https://carracedrinks.herokuapp.com/users').
        then((data)=>data.json()).
        then((data1)=>{
         setLoginDetails(data1);
@@ -34,8 +34,8 @@ function LogIn() {
     }, []);
     function login(event){
         event.preventDefault()
-        if(username==loginDetails.username && password==loginDetails.password){
-            navigate('/BodyDetails')
+        if(username==loginDetails[0].username && password==loginDetails[0].password){
+            navigate('/UploadForm')
         }
         else{
             alert('Incorrect credentails.')

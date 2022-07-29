@@ -1,11 +1,13 @@
 import react, { useState } from 'react'
 import { motion } from 'framer-motion'
+
 function Drawer(props) {
     let data = props.drinks;
     console.log(data)
 
     const [search, setSearchItem] = useState("")
 
+    let anim = 0.5;
 
     function onSearchChange(event) {
         setSearchItem(event.target.value)
@@ -27,10 +29,15 @@ function Drawer(props) {
             <input class="search" value={search} onChange={onSearchChange} placeholder="Search drinks.." />
             <div className="itemParent">
                 {
+
+
                     data.map((drink, index) => {
+                        anim = anim + 0.5
+                        console.log(anim)
                         return (
 
-                            <div className="itemList" key={index} onClick={() => props.onDrrinkClick(index)}>
+
+                            <motion.div initial={{ y: -1000 }} animate={{ y: 0 }} transition={{ delay: anim, duration: '0.3', stiffness: 200, type: "spring" }} className="itemList" key={index} onClick={() => props.onDrrinkClick(index)}>
                                 <div lassName="imageSide">
                                     <img class="avatar" src={drink.imageSrc} />
                                 </div>
@@ -42,7 +49,7 @@ function Drawer(props) {
 
 
                                 </div>
-                            </div>
+                            </motion.div>
                         )
 
                     })

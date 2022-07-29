@@ -11,7 +11,7 @@ const variants_ = {
         x: 0,
         transition: {
             type: 'spring',
-            delay: 0.3
+            delay: 0
         }
     },
     exit: {

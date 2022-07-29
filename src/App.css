@@ -93,8 +93,8 @@ color:#68161c;
     color:white
   }
   .avatar{
-    height:50px;
-    width:50px;
+    height:70px;
+    width:70px;
     object-fit: cover;
     border-radius:5px;
     transition:all ease 0.3s;
@@ -210,7 +210,7 @@ color:#68161c;
   /* margin-top:800px */
 }
 .ddrinksDetails{
-  height:800px !important;
+  height:900px !important;
   /* padding-left:300px; */
   /* border-top-left-radius: 50px; */
   /* margin-top: 60px; */
@@ -323,7 +323,7 @@ color:#68161c;
   display:grid;
   grid-template-columns: 30% 70%;
   height: 80px;
-  transition:all ease 0.3s;
+  transition:all ease-out 0.3s;
 }
 .itemList:hover{
   display:grid;
@@ -441,7 +441,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Track */
@@ -459,4 +459,17 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+.warning_{
+  margin-top:15px;
+  width:100%;
+  padding:15px;
+  background-color:#68161c;
+  /* border:1px white solid; */
+  color:white;
+  border-radius:5px;
+
+}
+.danger{
+  height:30px;
 }

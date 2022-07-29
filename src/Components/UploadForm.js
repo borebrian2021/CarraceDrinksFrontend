@@ -30,7 +30,7 @@ const variants_ = {
 }
 function UploadForm() {
     const navigate= useNavigate();
-    const BASE_URL = "http://localhost:3000/drinks"
+    const BASE_URL = "https://carracedrinks.herokuapp.com/drinks"
     const [category, setCategory] = useState()
     const [name, setName] = useState()
     const [capacity, setCapacity] = useState()

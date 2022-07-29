@@ -32,12 +32,12 @@ function Drawer(props) {
 
 
                     data.map((drink, index) => {
-                        anim = anim + 0.5
+                        anim = anim + 0.2
                         console.log(anim)
                         return (
 
 
-                            <motion.div initial={{ y: -1000 }} animate={{ y: 0 }} transition={{ delay: anim, duration: '0.3', stiffness: 200, type: "spring" }} className="itemList" key={index} onClick={() => props.onDrrinkClick(index)}>
+                            <motion.div initial={{ y: -500 }} animate={{ y: 0 }} transition={{ delay: anim, duration: '0.3', stiffness: 200, type: "spring" }} className="itemList" key={index} onClick={() => props.onDrrinkClick(index)}>
                                 <div lassName="imageSide">
                                     <img class="avatar" src={drink.imageSrc} />
                                 </div>

@@ -40,7 +40,7 @@ const proceed=(()=>{
                 */}
 <motion.img initial={{x:-1500}} animate={{x:0}} transition={{duration:0.8, delay:1, stiffness:120,type: "spring"}} src="../../images/onWelcome.png" className="logoBig"/>
 <motion.h3 className="p_white" initial={{x:-1500}} animate={{x:0}} transition={{duration:0.8, delay:1.2, stiffness:120,type: "spring"}} >Carrace Drinks</motion.h3>
-<motion.p className="p_white" initial={{x:-1500}} animate={{x:0}} transition={{duration:0.8, delay:1.4, stiffness:120,type: "spring"}} >Carrace Drinks Trusted by millions to discover and buy the right wine every time.</motion.p>
+<motion.p className="p_white" initial={{x:-1500}} animate={{x:0}} transition={{duration:0.8, delay:1.4, stiffness:120,type: "spring"}} >Carrace Drinks Trusted by millions to discover the right drink every time.</motion.p>
 <motion.Button onClick={proceed} className="getStarted" initial={{x:-1500}} animate={{x:0}} transition={{duration:0.8, delay:1.6, stiffness:120,type: "spring"}}>Get Started
 </motion.Button>     
     </div>

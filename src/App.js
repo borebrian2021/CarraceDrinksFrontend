@@ -15,7 +15,7 @@ function App() {
               <Router>
               <NavBar/>
               <RoutesAnimator/>
-              <Footer/>
+              <Footer className="footer text-white bg-dark"/>
               </Router>
       
 

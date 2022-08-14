@@ -26,10 +26,10 @@ function NavBar() {
 
                 {/* <span class="icons_"  onClick={goToLogin}><i class="fa fa-user"></i></span>
                  */}
-                <span class="icons_ text-xs"  onClick={goToLogin}>Home</span>
-                <span class="icons_ text-xs"  onClick={goToLogin}>About</span>
-                <span class="icons_ text-xs"  onClick={goToLogin}>Login</span>
-                <span class="icons_ text-xs"  onClick={goToLogin}>Signup</span>
+                <small class="icons_ "  onClick={goToLogin}>Home</small>
+                <small class="icons_ "  onClick={goToLogin}>About</small>
+                <small class="icons_ "  onClick={goToLogin}>Login</small>
+                <small class="icons_ "  onClick={goToLogin}>Signup</small>
 
 
 

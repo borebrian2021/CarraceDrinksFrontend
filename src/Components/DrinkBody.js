@@ -65,7 +65,7 @@ function DrinkBody() {
                 </div>
             </div>
 
-        
+
         </motion.div>
     )
 }
